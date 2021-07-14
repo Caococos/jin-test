@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2673396 */
+  src: url('iconfont.woff2?t=1626240439366') format('woff2'),
+       url('iconfont.woff?t=1626240439366') format('woff'),
+       url('iconfont.ttf?t=1626240439366') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-qq:before {
+  content: "\e6e6";
+}
+
+.icon-nav:before {
+  content: "\e64d";
+}
+
+.icon-sousu:before {
+  content: "\e63e";
+}
+
+.icon-zhuzhuangtu:before {
+  content: "\e635";
+}
+
+.icon-tubiaoxian_tongyong_tongji:before {
+  content: "\e697";
+}
+
+.icon-good:before {
+  content: "\e673";
+}
+
+.icon-shipinbofang-huazhonghua:before {
+  content: "\e661";
+}
+
+.icon-weibo:before {
+  content: "\e610";
+}
+
+.icon-quanping:before {
+  content: "\e62a";
+}
+
+.icon-weixin:before {
+  content: "\e624";
+}
+
+.icon-top1:before {
+  content: "\e646";
+}
+
+.icon-yonghu:before {
+  content: "\e6a0";
+}
+
+.icon-video:before {
+  content: "\e615";
+}
+
+.icon-xiangji:before {
+  content: "\e612";
+}
+

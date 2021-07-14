@@ -1,28 +1,60 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" @scroll="loadScroll($event)">
+    <div class="wrapper">
+      <main-nav></main-nav>
+      <transition name="move">
+        <main-nav v-show="isShow" class="main-nav2"></main-nav>
+      </transition>
+      <main-content></main-content>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainNav from 'components/content/nav/MainNav';
+import MainContent from 'components/content/main-content/MainContent';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainNav,
+    MainContent
+  },
+  mounted() {
+    window.addEventListener('scroll', this.loadScroll)
+  },
+  data() {
+    return {
+      isShow: false
+    }
+  },
+  methods: {
+    loadScroll() {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      // console.log(scrollTop)
+      if (scrollTop > 50) {
+        this.isShow = true
+      } else this.isShow = false
+    }
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  overflow: hidden;
+}
+.main-nav2 {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.move-enter-active {
+  transition: all 1s;
+}
+.move-enter {
+  opacity: 0;
 }
 </style>
