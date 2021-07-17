@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "4426987",
+      "name": "右上箭头",
+      "font_class": "chexiao",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
       "icon_id": "829012",
       "name": "QQ",
       "font_class": "qq",

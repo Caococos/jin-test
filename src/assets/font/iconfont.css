@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2673396 */
-  src: url('iconfont.woff2?t=1626240439366') format('woff2'),
-       url('iconfont.woff?t=1626240439366') format('woff'),
-       url('iconfont.ttf?t=1626240439366') format('truetype');
+  src: url('iconfont.woff2?t=1626513317906') format('woff2'),
+       url('iconfont.woff?t=1626513317906') format('woff'),
+       url('iconfont.ttf?t=1626513317906') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,10 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chexiao:before {
+  content: "\e602";
 }
 
 .icon-qq:before {

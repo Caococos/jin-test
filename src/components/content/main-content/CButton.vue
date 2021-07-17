@@ -29,6 +29,7 @@ export default {
   color: var(--color-blue-text);
   border: 1px solid var(--color-blue-text);
   border-radius: 11px;
+  cursor: pointer;
 }
 .c-button i {
   font-size: 12px;

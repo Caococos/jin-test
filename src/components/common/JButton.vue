@@ -1,5 +1,5 @@
 <template>
-  <div class='j-button' :style="{'color': textColor, 'backgroundColor': bGColor}">
+  <div class='j-button' :style="{'color': textColor, 'backgroundColor': bGColor, 'borderColor': borderColor}">
     {{message}}
   </div>
 </template>
@@ -19,6 +19,10 @@ export default {
     bGColor: {
       type: String,
       default: '#fff'
+    },
+    borderColor: {
+      type: String,
+      default: 'var(--color-blue-text)'
     }
   }
 }
@@ -32,10 +36,7 @@ export default {
   text-align: center;
   font-size: 14px;
   color: var(--color-blue-text);
-  border: 2px solid var(--color-blue-text);
+  border: 2px solid;
   border-radius: 8px;
-}
-.j-button:hover {
-  cursor: pointer;
 }
 </style>

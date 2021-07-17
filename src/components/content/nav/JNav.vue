@@ -21,7 +21,7 @@ export default {
 }
 .j-nav a {
   display: inline-block;
-  margin-right: 45px;
+  margin-right: 2.34375vw;
   height: 56px;
   line-height: 56px;
   cursor: pointer;

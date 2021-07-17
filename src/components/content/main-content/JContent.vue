@@ -21,13 +21,21 @@ export default {
 </script>
 
 <style scoped>
+@media only screen and (min-width: 1014px) {
+  .j-content {
+    width: 752px;
+    padding: 30px 41px;
+  }
+}
+@media only screen and (max-width: 1014px) {
+  .j-content {
+    padding: 24px 20px;
+  }
+}
 .j-content {
   position: relative;
   z-index: 1;
   margin-top: 30px;
-  width: 1082px;
-  padding: 30px 41px;
-  width: 752px;
   background-color: #fff;
   overflow: hidden;
 }
@@ -36,7 +44,7 @@ export default {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-image: url(~assets/img/水印.png);
-  transform: rotate(-45deg);
+  background-image: url(~assets/img/水印g.png);
+  background-size: 20%;
 }
 </style>

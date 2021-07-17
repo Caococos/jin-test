@@ -6,8 +6,6 @@ import App from './App.vue'
 
 import 'assets/css/base.css';
 import 'assets/font/iconfont.css';
-import 'assets/css/web.css';
-import 'assets/css/mobile.css';
 
 
 Vue.config.productionTip = false
