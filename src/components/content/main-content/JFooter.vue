@@ -6,7 +6,7 @@
     </div>
     <div class="good">
       <div class="niceP" @click="addGood()">
-        <i class="iconfont icon-good"></i>
+        <i class="iconfont icon-good" :style="{'color': textHigh}"></i>
         <p>{{good}}</p>
       </div>
       <p>好文章，需要你的鼓励</p>
@@ -19,12 +19,14 @@ export default {
   name: 'j-footer',
   data() {
     return {
-      good: 45
+      good: 45,
+      textHigh: '#b2b2b2'
     }
   },
   methods: {
     addGood() {
       this.good = 46
+      this.textHigh = 'var(--color-blue-text)'
     }
   }
 }
@@ -50,6 +52,7 @@ export default {
   cursor: pointer;
 }
 .niceP {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
